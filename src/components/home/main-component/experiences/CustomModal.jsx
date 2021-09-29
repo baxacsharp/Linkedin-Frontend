@@ -192,13 +192,7 @@ const CustomModal = ({
 								name="description"
 								value={fields.description}
 							/>
-							<label>profileId </label>
-							<input
-								className="d-block"
-								onChange={handleChange}
-								name="profileId"
-								value={fields.profileId}
-							/>
+
 							<label>startDate </label>
 							<input
 								required
