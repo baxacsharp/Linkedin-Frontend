@@ -32,7 +32,7 @@ const CreateModal = (props) => {
 				body: formData,
 			}
 		)
-		console.log(formData, "THIS IS")
+		console.log(resp, "THIS IS")
 		setPicture(null)
 		setFilePreview(null)
 	}
@@ -57,9 +57,9 @@ const CreateModal = (props) => {
 		e.preventDefault()
 		setSuccessMsg("")
 		setLoading(true)
-        console.log("state", picture)
+		console.log("state", picture)
 
-       
+
 
 		if (props.method === "POST") {
 			const resp = await fetch(`${process.env.REACT_APP_API_URL}/posts/`, {
